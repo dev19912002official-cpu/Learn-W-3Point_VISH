@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Learning with 3 Point Traders....</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',system-ui,-apple-system,sans-serif;}
+body{min-height:100vh;display:flex;justify-content:center;align-items:center;padding:20px;color:#fff;overflow-x:hidden;background-color:#04070f;}
+body::before{content:"";position:fixed;top:0;left:0;width:100%;height:100%;z-index:-1;background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200"><g fill="%23dbe7ff" fill-opacity="0.04"><path d="M100 0 L130 70 L200 100 L130 130 L100 200 L70 130 L0 100 L70 70 Z M100 30 L120 80 L170 100 L120 120 L100 170 L80 120 L30 100 L80 80 Z"/><circle cx="100" cy="100" r="15"/></g></svg>');background-size:160px 160px;background-repeat:repeat;}
+.wrapper{width:100%;max-width:460px;text-align:center;}
+.card{position:relative;overflow:hidden;padding:40px 30px;border-radius:20px;background:rgba(6,14,26,0.9);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:2px solid #dbe7ff;box-shadow:0 30px 60px rgba(0,0,0,.8),0 0 30px rgba(219,231,255,.15);}
+.card::before{content:"";position:absolute;width:250px;height:250px;background:#dbe7ff;border-radius:50%;filter:blur(120px);opacity:.12;top:-100px;left:-100px;z-index:1;}
+.main-content{position:relative;z-index:2;}
+.profile{width:120px;height:120px;border-radius:50%;object-fit:cover;border:4px solid #dbe7ff;box-shadow:0 0 25px rgba(219,231,255,.4);margin-bottom:20px;}
+.verify{color:#dbe7ff;font-size:13px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:12px;}
+.verify i{color:#38bdf8;}
+h2{font-size:24px;color:#ffffff;font-weight:900;letter-spacing:.5px;text-shadow:0 2px 10px rgba(0,0,0,.6);margin-bottom:20px;}
+.stats{background:rgba(219,231,255,.06);border-radius:12px;border:1px solid rgba(219,231,255,.2);display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:18px;text-align:center;margin-bottom:18px;}
+.stats-item{color:#e2e8f0;font-size:12.5px;font-weight:600;line-height:1.4;}
+.stats-item i{font-size:20px;margin-bottom:6px;display:block;}
+.stats-item .line1{display:block;font-weight:700;color:#dbe7ff;}
+.stats-item .line2{color:#fff;opacity:.9;font-size:11px;}
+.description{margin-top:15px;margin-bottom:22px;line-height:1.7;font-size:14px;color:#e3f20d;white-space:pre-wrap;}
+.btn{display:flex;align-items:center;justify-content:center;gap:12px;width:100%;padding:18px;border-radius:14px;text-decoration:none;color:#04070f;font-size:16px;font-weight:800;letter-spacing:.5px;background:linear-gradient(135deg, #eaf1ff, #7a9cc9);box-shadow:0 10px 30px rgba(219,231,255,.35);transition:all .3s ease;position:relative;overflow:hidden;border:1px solid rgba(255,255,255,.2);}
+.btn:hover{transform:translateY(-3px);box-shadow:0 15px 35px rgba(219,231,255,.5);}
+.btn::before{content:"";position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.4),transparent);transition:.7s;}
+.btn:hover::before{left:100%;}
+.benefits{margin-top:25px;background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.07);border-radius:12px;padding:20px;text-align:left;}
+.benefits div{padding:11px 0;color:#e2e8f0;font-size:14px;display:flex;align-items:center;gap:14px;border-bottom:1px solid rgba(255,255,255,.04);}
+.benefits div:last-child{border-bottom:none;}
+.timer{margin-top:22px;color:#94a3b8;font-size:13px;}
+.disclaimer{margin-top:25px;font-size:11px;line-height:1.8;color:#94a3b8;padding:0 10px;}
+@media(max-width:480px){.card{padding:30px 20px;}h2{font-size:calc(24px - 4px);}.profile{width:100px;height:100px;}.btn{font-size:14px;padding:16px;}.stats{padding:12px;}.stats-item{font-size:11px;}.stats-item .line2{font-size:10px;}}
+</style>
+
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1813444079643447');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1813444079643447&ev=PageView&noscript=1"/></noscript>
+</head>
+<body>
+<div class="wrapper">
+    <div class="card">
+        <div style="margin:-40px -30px 0 -30px;"></div>
+        <div class="main-content">
+            <img src="https://growthsteps.pages.dev/3P.jpg" class="profile" alt="Profile" style="">
+            <div class="verify"><i class="fas fa-check-circle"></i> தமிழ் கற்றல் கம்யூனிட்டி</div>
+            <h2>📚 3 POINT TRADERS 📚</h2>
+            <a class="btn" href="https://t.me/+NdyaNo-vRtM4NzQ1" onclick="trackAndRedirect(event)">
+                <i class="fab fa-telegram" style="font-size:18px;"></i> JOINF FREE LEARNING COMMUNITY <i class="fas fa-arrow-right"></i>
+            </a>
+            <div class="stats">
+                <div class="stats-item">
+                    <i class="fas fa-star" style="color:#dbe7ff"></i>
+                    <span class="line1">எளிதான கற்றல்</span>
+                    <span class="line2"></span>
+                </div>
+                <div class="stats-item">
+                    <i class="fas fa-users" style="color:#dbe7ff"></i>
+                    <span class="line1">குழுமம்</span>
+                    <span class="line2"></span>
+                </div>
+                <div class="stats-item">
+                    <i class="fas fa-fire" style="color:#dbe7ff"></i>
+                    <span class="line1">அப்டேட்டுகள்</span>
+                    <span class="line2"></span>
+                </div></div>
+            <p class="description">📚 நிபுணர்களிடம் கற்றுக்கொண்டு, நிஜ உலகப் பயன்பாட்டிற்குத் திறனுடன் தயாராகுங்கள். </p>
+            <div class="benefits">
+                <div><i class="fas fa-chart-line" style="color:#4ade80;"></i> <span>Daily மார்க்கெட் அனாலிசிஸ்</span></div>
+                <div><i class="fas fa-book-open" style="color:#ffd700;"></i> <span>Free கற்றல் பொருட்கள் (Learning Materials)</span></div>
+                <div><i class="fas fa-bullseye" style="color:#f87171;"></i> <span>தமிழில் எளிமையான பங்குச்சந்தை விளக்கம்</span></div>
+                <div><i class="fas fa-users" style="color:#38bdf8;"></i> <span>Full தமிழ் கம்யூனிட்டி சப்போர்ட்</span></div>
+                <div><i class="fas fa-lightbulb" style="color:#facc15;"></i> <span>முறையான சந்தை விழிப்புணர்வு &amp; அறிவு</span></div></div>
+            
+            <div class="timer" id="countTxt"></div>
+        </div>
+    </div>
+    <div class="disclaimer"><div style="text-align:center; margin:14px 0 10px 0; padding-top:10px; border-top:1px solid rgba(255,255,255,0.08);">
+  <p style="font-weight:bold; margin-bottom:6px; font-size:11px; color:#94a3b8;">Advertised by : SRS Marketing Agency</p>
+  <a href="https://t.me/srsagency" target="_blank" style="
+      display:inline-block;
+      background-color:#229ED9;
+      color:#ffffff;
+      padding:6px 14px;
+      border-radius:6px;
+      text-decoration:none;
+      font-weight:600;
+      font-size:12px;
+      font-family:sans-serif;">
+    📩 Visit @ SRS | Marketing ...
+  </a>
+</div><strong>Disclaimer:</strong> இந்த தளம் கல்வி நோக்கங்களுக்காக மட்டுமே, எந்தவொரு ஆலோசனையும் அல்லது முதலீடும் பரிந்துரைக்கப்படவில்லை. தயவுசெய்து உங்கள் சொந்த ஆராய்ச்சியை மேற்கொள்ளுங்கள்.</div>
+</div>
+
+<div style="position:fixed;bottom:0;left:0;width:100%;padding:14px 16px;background:rgba(0,0,0,.15);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);display:flex;justify-content:center;z-index:999;">
+  <a href="https://t.me/+NdyaNo-vRtM4NzQ1" onclick="trackAndRedirect(event)" style="position:relative;width:100%;max-width:460px;overflow:hidden;background:linear-gradient(135deg, #eaf1ff, #7a9cc9);padding:15px 20px;border-radius:16px;display:flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;color:#04070f;font-weight:800;font-size:15.5px;box-shadow:0 12px 30px rgba(0,0,0,.35);animation:fixedCtaPulse 2.2s infinite;">
+    <span style="position:absolute;top:0;left:-120%;width:80%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.35),transparent);transform:skewX(-20deg);animation:fixedCtaShine 3s infinite;"></span>
+    <i class="fab fa-telegram" style="font-size:18px;position:relative;z-index:1;"></i>
+    <span style="position:relative;z-index:1;">JOINF FREE LEARNING COMMUNITY</span>
+  </a>
+</div>
+<style>@keyframes fixedCtaShine{100%{left:140%;}}@keyframes fixedCtaPulse{0%,100%{transform:scale(1);}50%{transform:scale(1.015);}}</style>
+<div style="height:88px;"></div>
+
+<script>
+let time = 10;
+
+function trackAndRedirect(e) {
+    e.preventDefault();
+    const telegramLink = e.currentTarget.href;
+
+    fbq('track', 'Subscribe', {
+        content_name: 'Telegram Community',
+        button_click: true
+    }, {
+        eventID: 'telegram_subscribe_' + Date.now()
+    });
+
+    setTimeout(() => {
+        window.location.href = telegramLink;
+    }, 1000);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    const counter = document.getElementById("countTxt");
+
+    const countdown = setInterval(() => {
+        time--;
+        if (counter) {
+            counter.innerText = "Will be redirecting in " + time + " seconds....";
+        }
+
+        if (time <= 0) {
+            clearInterval(countdown);
+            window.location.href = "https://t.me/+Kayl9-71DzIwMGY9";
+        }
+    }, 1000);
+});
+</script>
+
+<script type="application/json" id="__lpConfig">{"design":"design8","logoDataUrl":"https://growthsteps.pages.dev/3P.jpg","bgDataUrl":"","videoEnabled":false,"videoSourceType":"upload","videoUrl":"","videoDataUrl":"","apkEnabled":false,"apkUrl":"","badgeText":"தமிழ் கற்றல் கம்யூனிட்டி","badgeColor":"#00c2ff","headline":"📚 3 POINT TRADERS 📚","fancyFont":false,"headlineColor":"#ffffff","headlineSize":"24","description":"📚 நிபுணர்களிடம் கற்றுக்கொண்டு, நிஜ உலகப் பயன்பாட்டிற்குத் திறனுடன் தயாராகுங்கள். ","descColor":"#e3f20d","descSize":"14","telegramLink":"https://telegram.me/+TMtHy0gXSdhkNzA1","btnText":"JOINF FREE LEARNING COMMUNITY","btnColor1":"#00b4db","btnColor2":"#0083b0","timerEnabled":true,"timerSeconds":"30","timerText":"Will be redirecting in {n} seconds....","accentColor":"#00c2ff","cardBg":"#0a1426","disclaimer":"இந்த தளம் கல்வி நோக்கங்களுக்காக மட்டுமே, எந்தவொரு ஆலோசனையும் அல்லது முதலீடும் பரிந்துரைக்கப்படவில்லை. தயவுசெய்து உங்கள் சொந்த ஆராய்ச்சியை மேற்கொள்ளுங்கள்.","pixelEnabled":true,"pixelId":"1360253356068615","pageTitle":"Learning with 3 Point Traders....","stats":[{"icon":"","highlight":"எளிதான கற்றல்","text":""},{"icon":"","highlight":"குழுமம்","text":""},{"icon":"","highlight":"அப்டேட்டுகள்","text":""}],"benefits":[{"icon":"fa-chart-line","color":"#4ade80","text":"Daily மார்க்கெட் அனாலிசிஸ்"},{"icon":"fa-book-open","color":"#ffd700","text":"Free கற்றல் பொருட்கள் (Learning Materials)"},{"icon":"fa-bullseye","color":"#f87171","text":"தமிழில் எளிமையான பங்குச்சந்தை விளக்கம்"},{"icon":"fa-users","color":"#38bdf8","text":"Full தமிழ் கம்யூனிட்டி சப்போர்ட்"},{"icon":"fa-lightbulb","color":"#facc15","text":"முறையான சந்தை விழிப்புணர்வு & அறிவு"}]}</script>
+</body>
+</html>
